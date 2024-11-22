@@ -1,0 +1,1887 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="img/icone.png" type="image/x-icon">
+<title>Enzo Fantapie Hamang - Portfolio</title>
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/stylecusto.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+<!-- Font Awesome -->
+<script src="https://kit.fontawesome.com/14273d579a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main>
+        <section id="mobilibab" class="py-5">
+            <div class="container">
+    <h1>Application Symfony N°1</h1>
+    <br><br>
+    <h2 style="text-decoration: underline;">Explication du projet</h2>
+    <p class="fs-3">
+        Nous avons réalisé en équipe la conception, ainsi que le développement d'une application pour l'aide au transport sur Bayonne, Anglet et Biarritz en utilisant
+        le framework Symfony.
+    </p><br><br><br>
+    <h5 class="fs-4">Trello :</h5><br>
+    <img src="img/mobilibab/trello.PNG" alt="trello du projet symfony N°1"><br><br><br>
+    <h5 class="fs-4">Schémas UML :</h5><br>
+    <div>
+        <div class="card">
+            <img src="img/mobilibab/implementation.PNG" class="card-img-top" alt="Mobilibab">
+            <div class="card-body">
+                <h5 class="card-title">Schémas UML</h5>
+                <a class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#infoProjet34" aria-controls="infoProjet34">Aperçu</a>
+            </div>
+
+            <!-- Full-page Offcanvas -->
+            <div class="offcanvas offcanvas-bottom h-100" tabindex="-1" id="infoProjet34" aria-labelledby="titelProjet34">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="titelProjet34">Application Symfony N°1</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body w-100">
+                    <!-- Carousel -->
+                    <div id="carouselProject34" class="carousel slide shadow h-100" data-bs-ride="carousel" data-bs-touch="true">
+                        <div class="carousel-inner h-100">
+                            <div class="carousel-item h-100 active" data-bs-interval="10000">
+                                <img src="img/mobilibab/conception.PNG" class="d-block w-100" alt="Image slide 1">
+                            </div>
+                            <div class="carousel-item h-100" data-bs-interval="2000">
+                                <img src="img/mobilibab/implementation.PNG" class="d-block w-100" alt="Image slide 2">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev btn btn-dark" type="button" data-bs-target="#carouselProject34" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next btn btn-dark" type="button" data-bs-target="#carouselProject34" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><br><br>
+                <h5 class="fs-4">Base de données :</h5><br>
+                <img src="img/mobilibab/bdd.PNG" alt="base de données"><br><br><br><br>
+                <p class="fs-5">Nous avons créé la base de données sur Mariadb, puis nous avons modifié le fichier .env de l'application afin que l'application soit connectée 
+                    à la nouvelle base de données créée :
+                </p><br>
+                <img src="img/mobilibab/env.png" alt="Connexion à la base de données"><br><br><br><br>
+                
+                <p class="fs-5">Par la suite, nous avons utilisé la ligne de commande de Symfony afin de remplir la base de données. Car Symfony étant un framework, il
+                    fournit des outils qui permettent notamment de remplir la base de données avec l'ORM de Doctrine.</p><br><br>
+                
+                <h5 class="fs-5">On a remplit la base de données à l'aide des commandes :</h5><br>
+
+                <ul>
+                    <li class="fs-5">php bin/console make:entity</li>
+                    <li class="fs-5">php bin/console make:migration</li>
+                    <li class="fs-5">php bin/console doctrine:migrations:migrate</li>
+                </ul><br><br>
+                      
+
+                <h5 class="fs-5">La commande : php bin/console make:crud est également une commande qui permet de créer des méthodes pour les entités créées :</h5><br>
+                
+                <img src="img/mobilibab/crud.png" alt="méthodes de l'entité">
+
+                <br><br><br><br><br><br>
+
+                <p class="fs-5">Pour ce qui est du développement, nous nous sommes répartis les tâches. Je me suis occupé de :</p><br><br><br>
+                <ul style="list-style-type: none;">
+                    <h5><li class="fs-5">Permettre aux clients de demander au personnel de la vente de les inscrire à un abonnement :</li></h5><br>
+                    <div>
+                        <div class="card">
+                            <img src="img/mobilibab/message.png" class="card-img-top" alt="Mobilibab">
+                            <div class="card-body">
+                                <h5 class="card-title">Inscription</h5>
+                                <a class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#infoProjet36"
+                                    aria-controls="infoProjet36">Aperçu</a>
+                            </div>
+                            <div class="offcanvas offcanvas-bottom h-100" tabindex="-1" id="infoProjet36"
+                                    aria-labelledby="titelProjet36">
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title" id="titelProjet34">Inscription</h5>
+                                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                            aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body w-100">
+                                    <!-- Carousel -->
+                                    <div id="carouselProject36" class="carousel slide shadow h-100"
+                                            data-bs-ride="carousel" data-bs-touch="true">
+                                        <div class="carousel-inner h-100">
+                                            <div class="carousel-item h-100 active" data-bs-interval="10000">
+                                                <img src="img/mobilibab/message.png"
+                                                        class="d-block w-100" alt="Image slide 1">
+                                            </div>
+                                            <div class="carousel-item h-100" data-bs-interval="2000">
+                                                <img src="img/mobilibab/reçu.png"
+                                                        class="d-block w-100" alt="Image slide 2">
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev btn btn-dark" type="button"
+                                                data-bs-target="#carouselProject36" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next btn btn-dark" type="button"
+                                                data-bs-target="#carouselProject36" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><br><br>
+                    <h5><li class="fs-5">Permettre aux clients d'accéder à un historique d'achats :</li></h5><br>
+                    <div>
+                        <div class="card">
+                            <img src="img/mobilibab/historique.png" class="card-img-top" alt="Mobilibab">
+                            <div class="card-body">
+                                <h5 class="card-title">Historique d'achats</h5>
+                                <a class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#infoProjet35"
+                                    aria-controls="infoProjet35">Aperçu</a>
+                            </div>
+                            <div class="offcanvas offcanvas-bottom h-100" tabindex="-1" id="infoProjet35"
+                                    aria-labelledby="titelProjet35">
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title" id="titelProjet35">Historique d'achats</h5>
+                                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                            aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                    <img src="img/mobilibab/historique.png" alt="historique d'achats">
+                                </div>
+                            </div>
+                        </div>
+                    </div><br><br>
+                    <h5><li class="fs-5">Permettre aux commerciaux de créer de nouvelles formules :</li></h5><br>
+                    <div>
+                        <div class="card">
+                            <img src="img/mobilibab/formule.png" class="card-img-top" alt="Mobilibab">
+                            <div class="card-body">
+                                <h5 class="card-title">Nouvelle Formule</h5>
+                                <a class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#infoProjet37"
+                                    aria-controls="infoProjet37">Aperçu</a>
+                            </div>
+                            <div class="offcanvas offcanvas-bottom h-100" tabindex="-1" id="infoProjet37"
+                                    aria-labelledby="titelProjet37">
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title" id="titelProjet37">Nouvelle Formule</h5>
+                                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                            aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body w-100">
+                                    <!-- Carousel -->
+                                    <div id="carouselProject37" class="carousel slide shadow h-100"
+                                            data-bs-ride="carousel" data-bs-touch="true">
+                                        <div class="carousel-inner h-100">
+                                            <div class="carousel-item h-100 active" data-bs-interval="10000">
+                                                <img src="img/mobilibab/formule.png"
+                                                        class="d-block w-100" alt="Image slide 1">
+                                            </div>
+                                            <div class="carousel-item h-100" data-bs-interval="2000">
+                                                <img src="img/mobilibab/fi.png"
+                                                        class="d-block w-100" alt="Image slide 2">
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev btn btn-dark" type="button"
+                                                data-bs-target="#carouselProject37" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next btn btn-dark" type="button"
+                                                data-bs-target="#carouselProject37" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><br><br>
+                    <h5><li class="fs-5">Permettre aux commerciaux de créer de nouveaux véhicules :</li></h5><br>
+                    <div>
+                        <div class="card">
+                            <img src="img/mobilibab/vehicules.png" class="card-img-top" alt="Mobilibab">
+                            <div class="card-body">
+                                <h5 class="card-title">Nouveaux véhicules</h5>
+                                <a class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#infoProjet38"
+                                    aria-controls="infoProjet38">Aperçu</a>
+                            </div>
+                            <div class="offcanvas offcanvas-bottom h-100" tabindex="-1" id="infoProjet38"
+                                    aria-labelledby="titelProjet38">
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title" id="titelProjet38">Nouveaux véhicules</h5>
+                                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                            aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body w-100">
+                                    <!-- Carousel -->
+                                    <div id="carouselProject38" class="carousel slide shadow h-100"
+                                            data-bs-ride="carousel" data-bs-touch="true">
+                                        <div class="carousel-inner h-100">
+                                            <div class="carousel-item h-100 active" data-bs-interval="10000">
+                                                <img src="img/mobilibab/vehicules.png"
+                                                        class="d-block w-100" alt="Image slide 1">
+                                            </div>
+                                            <div class="carousel-item h-100" data-bs-interval="2000">
+                                                <img src="img/mobilibab/vi.png"
+                                                        class="d-block w-100" alt="Image slide 2">
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev btn btn-dark" type="button"
+                                                data-bs-target="#carouselProject38" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next btn btn-dark" type="button"
+                                                data-bs-target="#carouselProject38" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </ul>
+            </div>
+        </section>
+        _______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+              
+        <section id="easyfood" class="py-5">
+            <div class="container">
+                <h1>Application Symfony N°2</h1>
+                <br><br>
+                <h2 style="text-decoration: underline;">Explication du projet</h2>
+                <p class ="fs-3">Nous avons réalisé en équipe la conception, ainsi que le développement d'une application afin d'assurer la livraison de plats en utilisant
+                    le framework Symfony.
+                </p><br>
+                <h5 class="fs-4">Nous avons créé et mis le projet sur un serveur web : </h5><br>
+                
+                <img src="img/easyfood/ssh.png"><br>
+                
+                <img src="img/easyfood/symfony.png"><br><br><br>
+                
+                
+                
+                <h5 class="fs-4">Trello :</h5><br>
+                <img src="img/easyfood/trello.png" alt="trello"><br><br><br>
+
+                <h5 class="fs-4">Product Backlog :</h5><br>
+                <embed src="img/easyfood/backlog.pdf" type="application/pdf" width="100%" height="400px"><br><br><br>
+
+                <h5 class="fs-4">Schémas UML :
+                </h5><br>
+                
+                <div class="card">
+                    <img src="img/easyfood/usecase.png" class="card-img-top" alt="Easyfood">
+                    <div class="card-body">
+                        <h5 class="card-title">Schémas</h5>
+                        <a class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#infoProjet39"
+                            aria-controls="infoProjet39">Aperçu</a>
+                    </div>
+                    <div class="offcanvas offcanvas-bottom h-100" tabindex="-1" id="infoProjet39"
+                            aria-labelledby="titelProjet39">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="titelProjet39">Schémas</h5>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body w-100">
+                            <!-- Carousel -->
+                            <div id="carouselProject39" class="carousel slide shadow h-100"
+                                    data-bs-ride="carousel" data-bs-touch="true">
+                                <div class="carousel-inner h-100">
+                                    <div class="carousel-item h-100 active" data-bs-interval="10000">
+                                        <img src="img/easyfood/conception.png"
+                                                class="d-block w-100" alt="Image slide 1">
+                                    </div>
+                                    <div class="carousel-item h-100" data-bs-interval="2000">
+                                        <img src="img/easyfood/implementation.png"
+                                                class="d-block w-100" alt="Image slide 2">
+                                    </div>
+                                    <div class="carousel-item h-100" data-bs-interval="2000">
+                                        <img src="img/easyfood/usecase.png"
+                                                class="d-block w-100" alt="Image slide 3">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev btn btn-dark" type="button"
+                                        data-bs-target="#carouselProject39" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next btn btn-dark" type="button"
+                                        data-bs-target="#carouselProject39" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br><br><br>
+
+                <h5 class="fs-4">Base de données:</h5><br>
+                <img src="img/easyfood/bdd.png" alt="base de données"><br><br><br><br>
+
+
+
+                <p class="fs-5">Nous avons créé la base de données sur Mariadb, puis nous avons modifié le fichier .env de l'application afin que l'application soit connectée 
+                    à la nouvelle base de données créée :
+                </p><br>
+
+                <img src="img/mobilibab/env.png" alt="Connexion à la base de données"><br>
+                
+                <p class="fs-5">Par la suite, nous avons utilisé la ligne de commande de Symfony afin de remplir la base de données, comme pour le projet précédent.
+                </p><br><br><br><br>
+
+                <h5 class="fs-5">Lors de ce projet, j'ai réalisé : </h5><br>
+
+                <ul style="list-style-type: none;">
+                    <h5><li class="fs-5">Gestion des habilitations pour les clients et les restaurateurs</li></h5><br>
+                    <div>
+                        <div class="card">
+                            <img src="img/easyfood/rules.png" class="card-img-top" alt="Easyfood">
+                            <div class="card-body">
+                                <h5 class="card-title">Règles d'accès</h5>
+                                <a class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#infoProjet40"
+                                    aria-controls="infoProjet40">Aperçu</a>
+                            </div>
+                            <div class="offcanvas offcanvas-bottom h-100" tabindex="-1" id="infoProjet40"
+                                    aria-labelledby="titelProjet40">
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title" id="titelProjet40">Règles d'accès</h5>
+                                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                            aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body w-100">
+                                    <!-- Carousel -->
+                                    <div id="carouselProject40" class="carousel slide shadow h-100"
+                                            data-bs-ride="carousel" data-bs-touch="true">
+                                        <div class="carousel-inner h-100">
+                                            <div class="carousel-item h-100 active" data-bs-interval="10000">
+                                                <img src="img/easyfood/av_erreur.png"
+                                                        class="d-block w-100" alt="Image slide 1">
+                                            </div>
+                                            <div class="carousel-item h-100" data-bs-interval="2000">
+                                                <img src="img/easyfood/erreur.png"
+                                                        class="d-block w-100" alt="Image slide 2">
+                                            </div>
+                                            <div class="carousel-item h-100" data-bs-interval="2000">
+                                                <img src="img/easyfood/rules.png"
+                                                        class="d-block w-100" alt="Image slide 3">
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev btn btn-dark" type="button"
+                                                data-bs-target="#carouselProject40" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next btn btn-dark" type="button"
+                                                data-bs-target="#carouselProject40" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><br><br>
+                    <h5><li class="fs-5">L'évaluation d'un restaurant par un client</li></h5><br>
+                    <div>
+                        <div class="card">
+                            <img src="img/easyfood/eval.png" class="card-img-top" alt="Easyfood">
+                            <div class="card-body">
+                                <h5 class="card-title">Évaluation</h5>
+                                <a class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#infoProjet41"
+                                    aria-controls="infoProjet41">Aperçu</a>
+                            </div>
+                            <div class="offcanvas offcanvas-bottom h-100" tabindex="-1" id="infoProjet41"
+                                    aria-labelledby="titelProjet41">
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title" id="titelProjet41">Évaluation</h5>
+                                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                            aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body w-100">
+                                    <!-- Carousel -->
+                                    <div id="carouselProject41" class="carousel slide shadow h-100"
+                                            data-bs-ride="carousel" data-bs-touch="true">
+                                        <div class="carousel-inner h-100">
+                                            <div class="carousel-item h-100 active" data-bs-interval="10000">
+                                                <img src="img/easyfood/client.png"
+                                                        class="d-block w-100" alt="Image slide 1">
+                                            </div>
+                                            <div class="carousel-item h-100" data-bs-interval="2000">
+                                                <img src="img/easyfood/eval.png"
+                                                        class="d-block w-100" alt="Image slide 2">
+                                            </div>
+                                            <div class="carousel-item h-100" data-bs-interval="2000">
+                                                <img src="img/easyfood/evalbdd.png"
+                                                        class="d-block w-100" alt="Image slide 3">
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev btn btn-dark" type="button"
+                                                data-bs-target="#carouselProject41" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next btn btn-dark" type="button"
+                                                data-bs-target="#carouselProject41" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><br><br>
+                    <h5><li class="fs-5">La supression d'un plat par un restaurateur</li></h5><br>
+                    <div>
+                        <div class="card">
+                            <img src="img/easyfood/delete.png" class="card-img-top" alt="Easyfood">
+                            <div class="card-body">
+                                <h5 class="card-title">Suppression</h5>
+                                <a class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#infoProjet42"
+                                    aria-controls="infoProjet42">Aperçu</a>
+                            </div>
+                            <div class="offcanvas offcanvas-bottom h-100" tabindex="-1" id="infoProjet42"
+                                    aria-labelledby="titelProjet42">
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title" id="titelProjet42">Suppression</h5>
+                                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                            aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body w-100">
+                                    <!-- Carousel -->
+                                    <div id="carouselProject42" class="carousel slide shadow h-100"
+                                            data-bs-ride="carousel" data-bs-touch="true">
+                                        <div class="carousel-inner h-100">
+                                            <div class="carousel-item h-100 active" data-bs-interval="10000">
+                                                <img src="img/easyfood/avant.png"
+                                                        class="d-block w-100" alt="Image slide 1">
+                                            </div>
+                                            <div class="carousel-item h-100" data-bs-interval="2000">
+                                                <img src="img/easyfood/delete.png"
+                                                        class="d-block w-100" alt="Image slide 2">
+                                            </div>
+                                            <div class="carousel-item h-100" data-bs-interval="2000">
+                                                <img src="img/easyfood/apres.png"
+                                                        class="d-block w-100" alt="Image slide 3">
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev btn btn-dark" type="button"
+                                                data-bs-target="#carouselProject42" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next btn btn-dark" type="button"
+                                                data-bs-target="#carouselProject42" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><br><br>
+                    <h5><li class="fs-5">Permettre aux restaurateurs de consulter les caractéristiques de leurs plats.</li></h5><br>
+                    <div>
+                        <div class="card">
+                            <img src="img/easyfood/carac.png" class="card-img-top" alt="Easyfood">
+                            <div class="card-body">
+                                <h5 class="card-title">caractéristiques</h5>
+                                <a class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#infoProjet43"
+                                    aria-controls="infoProjet43">Aperçu</a>
+                            </div>
+                            <div class="offcanvas offcanvas-bottom h-100" tabindex="-1" id="infoProjet43"
+                                    aria-labelledby="titelProjet43">
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title" id="titelProjet43">caractéristiques</h5>
+                                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                            aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body w-100">
+                                    <!-- Carousel -->
+                                    <div id="carouselProject43" class="carousel slide shadow h-100"
+                                            data-bs-ride="carousel" data-bs-touch="true">
+                                        <div class="carousel-inner h-100">
+                                            <div class="carousel-item h-100 active" data-bs-interval="10000">
+                                                <img src="img/easyfood/carac.png"
+                                                        class="d-block w-100" alt="Image slide 1">
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev btn btn-dark" type="button"
+                                                data-bs-target="#carouselProject43" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next btn btn-dark" type="button"
+                                                data-bs-target="#carouselProject43" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><br><br>
+                    <h5><li class="fs-5">Permettre aux restaurateurs d'ajouter un type de plat</li></h5><br>
+                    <div>
+                        <div class="card">
+                            <img src="img/easyfood/tdp.png" class="card-img-top" alt="Easyfood">
+                            <div class="card-body">
+                                <h5 class="card-title">Type de plat</h5>
+                                <a class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#infoProjet44"
+                                    aria-controls="infoProjet44">Aperçu</a>
+                            </div>
+                            <div class="offcanvas offcanvas-bottom h-100" tabindex="-1" id="infoProjet44"
+                                    aria-labelledby="titelProjet44">
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title" id="titelProjet44">Type de plat</h5>
+                                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                            aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body w-100">
+                                    <!-- Carousel -->
+                                    <div id="carouselProject44" class="carousel slide shadow h-100"
+                                            data-bs-ride="carousel" data-bs-touch="true">
+                                        <div class="carousel-inner h-100">
+                                            <div class="carousel-item h-100 active" data-bs-interval="10000">
+                                                <img src="img/easyfood/tdp.png"
+                                                        class="d-block w-100" alt="Image slide 1">
+                                            </div>
+                                            <div class="carousel-item h-100" data-bs-interval="10000">
+                                                <img src="img/easyfood/tdpbdd.png"
+                                                        class="d-block w-100" alt="Image slide 2">
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev btn btn-dark" type="button"
+                                                data-bs-target="#carouselProject44" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next btn btn-dark" type="button"
+                                                data-bs-target="#carouselProject44" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ul><br><br><br>
+
+                <p class="fs-5">Lors de ce projet, j'ai mis en place GLPI afin que nous puissions être en mesure de s'entraider en dehors des heures de cours :</p><br>
+
+                <div>
+                    <div class="card">
+                        <img src="img/easyfood/demande.png" class="card-img-top" alt="Easyfood">
+                        <div class="card-body">
+                            <h5 class="card-title">Assistance</h5>
+                            <a class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#infoProjet45"
+                                aria-controls="infoProjet45">Aperçu</a>
+                        </div>
+                        <div class="offcanvas offcanvas-bottom h-100" tabindex="-1" id="infoProjet45"
+                                aria-labelledby="titelProjet45">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="titelProjet45">Assistance</h5>
+                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                        aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body w-100">
+                                <!-- Carousel -->
+                                <div id="carouselProject45" class="carousel slide shadow h-100"
+                                        data-bs-ride="carousel" data-bs-touch="true">
+                                    <div class="carousel-inner h-100">
+                                        <div class="carousel-item h-100 active" data-bs-interval="10000">
+                                            <img src="img/easyfood/demande.png"
+                                                    class="d-block w-100" alt="Image slide 1">
+                                        </div>
+                                        <div class="carousel-item h-100" data-bs-interval="10000">
+                                            <img src="img/easyfood/demanded.png"
+                                                    class="d-block w-100" alt="Image slide 2">
+                                        </div>
+                                        <div class="carousel-item h-100" data-bs-interval="10000">
+                                            <img src="img/easyfood/rep.png"
+                                                    class="d-block w-100" alt="Image slide 3">
+                                        </div>
+                                        <div class="carousel-item h-100" data-bs-interval="10000">
+                                            <img src="img/easyfood/repfile.png"
+                                                    class="d-block w-100" alt="Image slide 4">
+                                        </div>
+                                        <div class="carousel-item h-100" data-bs-interval="10000">
+                                            <img src="img/easyfood/thanks.png"
+                                                    class="d-block w-100" alt="Image slide 5">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev btn btn-dark" type="button"
+                                            data-bs-target="#carouselProject45" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next btn btn-dark" type="button"
+                                            data-bs-target="#carouselProject45" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><br><br>
+
+                <p class="fs-5">Pour finir, j'ai également mis en place le plan de sauvegarde 3/2/1 sur ce projet en cas de perte :</p><br>
+
+                <div>
+                    <div class="card">
+                        <img src="img/easyfood/disque.png" class="card-img-top" alt="Easyfood">
+                        <div class="card-body">
+                            <h5 class="card-title">Sauvegarde</h5>
+                            <a class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#infoProjet46"
+                                aria-controls="infoProjet46">Aperçu</a>
+                        </div>
+                        <div class="offcanvas offcanvas-bottom h-100" tabindex="-1" id="infoProjet46"
+                                aria-labelledby="titelProjet46">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="titelProjet46">Sauvegarde</h5>
+                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                        aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body w-100">
+                                <!-- Carousel -->
+                                <div id="carouselProject46" class="carousel slide shadow h-100"
+                                        data-bs-ride="carousel" data-bs-touch="true">
+                                    <div class="carousel-inner h-100">
+                                        <div class="carousel-item h-100 active" data-bs-interval="10000">
+                                            <img src="img/easyfood/disque.png"
+                                                    class="d-block w-100" alt="Image slide 1">
+                                        </div>
+                                        <div class="carousel-item h-100" data-bs-interval="10000">
+                                            <img src="img/easyfood/drive.png"
+                                                    class="d-block w-100" alt="Image slide 2">
+                                        </div>
+                                        <div class="carousel-item h-100" data-bs-interval="10000">
+                                            <img src="img/easyfood/ordi.png"
+                                                    class="d-block w-100" alt="Image slide 3">
+                                        </div>
+                                        <div class="carousel-item h-100" data-bs-interval="10000">
+                                            <img src="img/easyfood/serveur.png"
+                                                    class="d-block w-100" alt="Image slide 4">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev btn btn-dark" type="button"
+                                            data-bs-target="#carouselProject46" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next btn btn-dark" type="button"
+                                            data-bs-target="#carouselProject46" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><br>
+            </div>
+        </section>
+
+        _______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+              
+        <section id="stage2" class="py-5">
+            <div class="container">
+                <h1>Stage de BTS SIO 2</h1>
+                <br><br>
+                <h2 style="text-decoration: underline;">Explication du projet</h2><br>
+                <p class="fs-3">Lors de mon deuxième stage de BTS, je me suis occupé d'améliorer une application en interne, qui permet
+                    de gérer le business de l'entreprise. L'application est développée en PHP.
+                </p><br>
+                <h5 class="fs-5">Comme pour mes autres projets, j'ai pris la bonne habitude d'utiliser l'outil trello lors de ce stage : </h5><br>
+
+                <img src="img/appli_interne/trello.PNG" alt="Trello du stage 2"><br><br><br>
+
+                <p class="fs-5">Avant de toucher aux fonctionnalitées, j'ai dû modifier la base de données afin que les informations nécessaires à l'entreprise soient correctes : </p><br>
+
+                <div>
+                    <div class="card">
+                        <img src="img/appli_interne/bdd/csv_new_bdd.jpg" class="card-img-top" alt="Stage2">
+                        <div class="card-body">
+                            <h5 class="card-title">Base de données</h5>
+                            <a class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#infoProjet47"
+                                aria-controls="infoProjet47">Aperçu</a>
+                        </div>
+                        <div class="offcanvas offcanvas-bottom h-100" tabindex="0" id="infoProjet47"
+                                aria-labelledby="titelProjet47">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="titelProjet47">Base de données</h5>
+                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                        aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body w-100">
+                                <!-- Carousel -->
+                                <div id="carouselProject47" class="carousel slide shadow h-100"
+                                        data-bs-ride="carousel" data-bs-touch="true">
+                                    <div class="carousel-inner h-100">
+                                        <div class="carousel-item h-100 active" data-bs-interval="10000">
+                                            <img src="img/appli_interne/bdd/csv_new_bdd.jpg"
+                                                    class="d-block w-100" alt="Image slide 1">
+                                        </div>
+                                        <div class="carousel-item h-100" data-bs-interval="10000">
+                                            <img src="img/appli_interne/bdd/new_base_donnees.jpg"
+                                                    class="d-block w-100" alt="Image slide 2">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev btn btn-dark" type="button"
+                                            data-bs-target="#carouselProject47" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next btn btn-dark" type="button"
+                                            data-bs-target="#carouselProject47" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><br><br>
+
+                <p class="fs-5">Par la suite, je me suis occupé des fonctionnalitées : </p>
+                <ul style="list-style-type: none;">
+                    <h5><li class="fs-5">Modification de la table Clients</li></h5><br>
+                    <div>
+                        <div class="card">
+                            <img src="img/appli_interne/clients/table/Capture.PNG" class="card-img-top" alt="Stage2">
+                            <div class="card-body">
+                                <h5 class="card-title">Table Clients</h5>
+                                <a class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#infoProjet48"
+                                    aria-controls="infoProjet48">Aperçu</a>
+                            </div>
+                            <div class="offcanvas offcanvas-bottom h-100" tabindex="-1" id="infoProjet48"
+                                    aria-labelledby="titelProjet48">
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title" id="titelProjet48">Table Clients</h5>
+                                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                            aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body w-100">
+                                    <!-- Carousel -->
+                                    <div id="carouselProject48" class="carousel slide shadow h-100"
+                                            data-bs-ride="carousel" data-bs-touch="true">
+                                        <div class="carousel-inner h-100">
+                                            <div class="carousel-item h-100 active" id="mg" data-bs-interval="10000">
+                                                <img src="img/appli_interne/clients/table/Capture.PNG"
+                                                        class="d-block w-100" alt="Image slide 1">
+                                            </div>
+                                            <div class="carousel-item h-100" id="petit" data-bs-interval="10000">
+                                                <img src="img/appli_interne/clients/table/2.PNG"
+                                                        class="d-block w-100" alt="Image slide 2">
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev btn btn-dark" type="button"
+                                                data-bs-target="#carouselProject48" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next btn btn-dark" type="button"
+                                                data-bs-target="#carouselProject48" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><br><br>
+
+                    <h5><li>Ajouter Client</li></h5><br>
+                    <div>
+                        <div class="card">
+                            <img src="img/appli_interne/clients/ajout/1.PNG" class="card-img-top" alt="Stage2">
+                            <div class="card-body">
+                                <h5 class="card-title">Ajout</h5>
+                                <a class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#infoProjet49"
+                                    aria-controls="infoProjet49">Aperçu</a>
+                            </div>
+                            <div class="offcanvas offcanvas-bottom h-100" tabindex="-1" id="infoProjet49"
+                                    aria-labelledby="titelProjet49">
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title" id="titelProjet49">Ajout</h5>
+                                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                            aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body w-100">
+                                    <!-- Carousel -->
+                                    <div id="carouselProject49" class="carousel slide shadow h-100"
+                                            data-bs-ride="carousel" data-bs-touch="true">
+                                        <div class="carousel-inner h-100">
+                                            <div class="carousel-item h-100 active" data-bs-interval="10000">
+                                                <img src="img/appli_interne/clients/ajout/1.PNG"
+                                                        class="d-block w-100" alt="Image slide 1">
+                                            </div>
+                                            <div class="carousel-item h-100" data-bs-interval="10000">
+                                                <img src="img/appli_interne/clients/ajout/2.PNG"
+                                                        class="d-block w-100" alt="Image slide 2">
+                                            </div>
+                                            <div class="carousel-item h-100" data-bs-interval="10000">
+                                                <img src="img/appli_interne/clients/ajout/3.PNG"
+                                                        class="d-block w-100" alt="Image slide 3">
+                                            </div>
+                                            <div class="carousel-item h-100" data-bs-interval="10000">
+                                                <img src="img/appli_interne/clients/ajout/4.PNG"
+                                                        class="d-block w-100" alt="Image slide 4">
+                                            </div>
+                                            <div class="carousel-item h-100" data-bs-interval="10000">
+                                                <img src="img/appli_interne/clients/ajout/5.PNG"
+                                                        class="d-block w-100" alt="Image slide 5">
+                                            </div>
+                                            <div class="carousel-item h-100" data-bs-interval="10000">
+                                                <img src="img/appli_interne/clients/ajout/6.PNG"
+                                                        class="d-block w-100" alt="Image slide 6">
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev btn btn-dark" type="button"
+                                                data-bs-target="#carouselProject49" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next btn btn-dark" type="button"
+                                                data-bs-target="#carouselProject49" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><br><br>
+
+                    <h5><li>Modifier Client</li></h5><br>
+                    <div>
+                        <div class="card">
+                            <img src="img/appli_interne/clients/upd/1.PNG" class="card-img-top" alt="Stage2">
+                            <div class="card-body">
+                                <h5 class="card-title">Modification</h5>
+                                <a class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#infoProjet50"
+                                    aria-controls="infoProjet50">Aperçu</a>
+                            </div>
+                            <div class="offcanvas offcanvas-bottom h-100" tabindex="-1" id="infoProjet50"
+                                    aria-labelledby="titelProjet50">
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title" id="titelProjet50">Modification</h5>
+                                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                            aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body w-100">
+                                    <!-- Carousel -->
+                                    <div id="carouselProject50" class="carousel slide shadow h-100"
+                                            data-bs-ride="carousel" data-bs-touch="true">
+                                        <div class="carousel-inner h-100">
+                                            <div class="carousel-item h-100 active" data-bs-interval="10000">
+                                                <img src="img/appli_interne/clients/upd/1.PNG"
+                                                        class="d-block w-100" alt="Image slide 1">
+                                            </div>
+                                            <div class="carousel-item h-100" data-bs-interval="10000">
+                                                <img src="img/appli_interne/clients/upd/2.PNG"
+                                                        class="d-block w-100" alt="Image slide 2">
+                                            </div>
+                                            <div class="carousel-item h-100" data-bs-interval="10000">
+                                                <img src="img/appli_interne/clients/upd/3.PNG"
+                                                        class="d-block w-100" alt="Image slide 3">
+                                            </div>
+                                            <div class="carousel-item h-100" data-bs-interval="10000">
+                                                <img src="img/appli_interne/clients/upd/4.PNG"
+                                                        class="d-block w-100" alt="Image slide 4">
+                                            </div>
+                                            <div class="carousel-item h-100" data-bs-interval="10000">
+                                                <img src="img/appli_interne/clients/upd/5.PNG"
+                                                        class="d-block w-100" alt="Image slide 5">
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev btn btn-dark" type="button"
+                                                data-bs-target="#carouselProject50" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next btn btn-dark" type="button"
+                                                data-bs-target="#carouselProject50" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><br><br>
+
+                    <h5><li>Supprimer Client</li></h5><br>
+                    <div>
+                        <div class="card">
+                            <img src="img/appli_interne/clients/delete/1.PNG" class="card-img-top" alt="Stage2">
+                            <div class="card-body">
+                                <h5 class="card-title">Suppression</h5>
+                                <a class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#infoProjet51"
+                                    aria-controls="infoProjet51">Aperçu</a>
+                            </div>
+                            <div class="offcanvas offcanvas-bottom h-100" tabindex="-1" id="infoProjet51"
+                                    aria-labelledby="titelProjet51">
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title" id="titelProjet51">Suppression</h5>
+                                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                            aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body w-100">
+                                    <!-- Carousel -->
+                                    <div id="carouselProject51" class="carousel slide shadow h-100"
+                                            data-bs-ride="carousel" data-bs-touch="true">
+                                        <div class="carousel-inner h-100">
+                                            <div class="carousel-item h-100 active" data-bs-interval="10000">
+                                                <img src="img/appli_interne/clients/delete/1.PNG"
+                                                        class="d-block w-100" alt="Image slide 1">
+                                            </div>
+                                            <div class="carousel-item h-100" data-bs-interval="10000">
+                                                <img src="img/appli_interne/clients/delete/2.PNG"
+                                                        class="d-block w-100" alt="Image slide 2">
+                                            </div>
+                                            <div class="carousel-item h-100" data-bs-interval="10000">
+                                                <img src="img/appli_interne/clients/delete/3.PNG"
+                                                        class="d-block w-100" alt="Image slide 3">
+                                            </div>
+                                            <div class="carousel-item h-100" data-bs-interval="10000">
+                                                <img src="img/appli_interne/clients/delete/4.PNG"
+                                                        class="d-block w-100" alt="Image slide 4">
+                                            </div>
+                                            <div class="carousel-item h-100" data-bs-interval="10000">
+                                                <img src="img/appli_interne/clients/delete/5.PNG"
+                                                        class="d-block w-100" alt="Image slide 5">
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev btn btn-dark" type="button"
+                                                data-bs-target="#carouselProject51" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next btn btn-dark" type="button"
+                                                data-bs-target="#carouselProject51" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </ul><br><br>
+
+
+                <p class="fs-5">J'ai également fait de même avec les comptes autorisés à se connecter à l'application : </p><br>
+
+                <img src="img/appli_interne/compte/1.PNG" alt="Comptes autorisés"><br><br>
+
+                <p class="fs-5">Je me suis occupé de rendre le site plus agréable en remplaçant les liens par des icones : </p><br>
+
+                <div>
+                    <div class="card">
+                        <img src="img/appli_interne/petites_modifications/code.PNG" class="card-img-top" alt="Stage2">
+                        <div class="card-body">
+                            <h5 class="card-title">Design</h5>
+                            <a class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#infoProjet52"
+                                aria-controls="infoProjet52">Aperçu</a>
+                        </div>
+                        <div class="offcanvas offcanvas-bottom h-100" tabindex="-1" id="infoProjet52"
+                                aria-labelledby="titelProjet52">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="titelProjet52">Design</h5>
+                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                        aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body w-100">
+                                <!-- Carousel -->
+                                <div id="carouselProject52" class="carousel slide shadow h-100"
+                                        data-bs-ride="carousel" data-bs-touch="true">
+                                    <div class="carousel-inner h-100">
+                                        <div class="carousel-item h-100 active" id="g" data-bs-interval="10000">
+                                            <img src="img/appli_interne/petites_modifications/code.PNG"
+                                                    class="d-block w-100" alt="Image slide 1">
+                                        </div>
+                                        <div class="carousel-item h-100" data-bs-interval="10000">
+                                            <img src="img/appli_interne/petites_modifications/interface.PNG"
+                                                    class="d-block w-100" alt="Image slide 2">
+                                        </div>
+                                        <div class="carousel-item h-100" data-bs-interval="10000">
+                                            <img src="img/appli_interne/petites_modifications/link_google_to_replace.jpg"
+                                                    class="d-block w-100" alt="Image slide 3">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev btn btn-dark" type="button"
+                                            data-bs-target="#carouselProject52" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next btn btn-dark" type="button"
+                                            data-bs-target="#carouselProject52" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><br><br>
+
+                <p class="fs-5">Je me suis également servi de bootstrap pour inclure des sous listes dans l'onglet Identifiant FTP, afin
+                    d'avoir les identifiants de connexion à la base de données et au CMS de chaque client plus facilement :
+                </p><br>
+
+                <div>
+                    <div class="card">
+                        <img src="img/appli_interne/sous_liste/1.jpg" class="card-img-top" alt="Stage2">
+                        <div class="card-body">
+                            <h5 class="card-title">Sous liste</h5>
+                            <a class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#infoProjet53"
+                                aria-controls="infoProjet53">Aperçu</a>
+                        </div>
+                        <div class="offcanvas offcanvas-bottom h-100" tabindex="-1" id="infoProjet53"
+                                aria-labelledby="titelProjet53">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="titelProjet53">Design</h5>
+                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                        aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body w-100">
+                                <!-- Carousel -->
+                                <div id="carouselProject53" class="carousel slide shadow h-100"
+                                        data-bs-ride="carousel" data-bs-touch="true">
+                                    <div class="carousel-inner h-100">
+                                        <div class="carousel-item h-100 active" data-bs-interval="10000">
+                                            <img src="img/appli_interne/sous_liste/1.jpg"
+                                                    class="d-block w-100" alt="Image slide 1">
+                                        </div>
+                                        <div class="carousel-item h-100" data-bs-interval="10000">
+                                            <img src="img/appli_interne/sous_liste/2.jpg"
+                                                    class="d-block w-100" alt="Image slide 2">
+                                        </div>
+                                        <div class="carousel-item h-100" data-bs-interval="10000">
+                                            <img src="img/appli_interne/sous_liste/3.jpg"
+                                                    class="d-block w-100" alt="Image slide 3">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev btn btn-dark" type="button"
+                                            data-bs-target="#carouselProject53" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next btn btn-dark" type="button"
+                                            data-bs-target="#carouselProject53" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><br><br>
+
+                <h1>Sécurité</h1><br>
+
+                <p class="fs-5">A propos de la sécurité, j'ai réalisé une multitude de tâches : </p>
+                <ul style="list-style-type: none;">
+                    <h5><li class="fs-5">Empêcher la connexion par URL :</li></h5><br>
+                    <div>
+                        <div class="card">
+                            <img src="img/appli_interne/securite/url/1.PNG" class="card-img-top" alt="Stage2">
+                            <div class="card-body">
+                                <h5 class="card-title">URL</h5>
+                                <a class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#infoProjet54"
+                                    aria-controls="infoProjet54">Aperçu</a>
+                            </div>
+                            <div class="offcanvas offcanvas-bottom h-100" tabindex="-1" id="infoProjet54"
+                                    aria-labelledby="titelProjet54">
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title" id="titelProjet54">URL</h5>
+                                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                            aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body w-100">
+                                    <!-- Carousel -->
+                                    <div id="carouselProject54" class="carousel slide shadow h-100"
+                                            data-bs-ride="carousel" data-bs-touch="true">
+                                        <div class="carousel-inner h-100">
+                                            <div class="carousel-item h-100 active" id="card" data-bs-interval="10000">
+                                                <img src="img/appli_interne/securite/url/1.PNG"
+                                                        class="d-block w-100" alt="Image slide 1">
+                                            </div>
+                                            <div class="carousel-item h-100" data-bs-interval="10000">
+                                                <img src="img/appli_interne/securite/url/2.PNG"
+                                                        class="d-block w-100" alt="Image slide 2">
+                                            </div>
+                                            <div class="carousel-item h-100" data-bs-interval="10000">
+                                                <img src="img/appli_interne/securite/url/url.PNG"
+                                                        class="d-block w-100" alt="Image slide 3">
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev btn btn-dark" type="button"
+                                                data-bs-target="#carouselProject54" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next btn btn-dark" type="button"
+                                                data-bs-target="#carouselProject54" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><br><br>
+                    <h5><li class="fs-5">N'autoriser que certaines ip à se connecter à l'application : </li></h5><br>
+
+                    <div>
+                        <div class="card">
+                            <img src="img/appli_interne/securite/connexion_ip/2.PNG" class="card-img-top" alt="Stage2">
+                            <div class="card-body">
+                                <h5 class="card-title">Autorisation IP</h5>
+                                <a class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#infoProjet55"
+                                    aria-controls="infoProjet55">Aperçu</a>
+                            </div>
+                            <div class="offcanvas offcanvas-bottom h-100" tabindex="-1" id="infoProjet55"
+                                    aria-labelledby="titelProjet55">
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title" id="titelProjet55">Autorisation IP</h5>
+                                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                            aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body w-100">
+                                    <!-- Carousel -->
+                                    <div id="carouselProject55" class="carousel slide shadow h-100"
+                                            data-bs-ride="carousel" data-bs-touch="true">
+                                        <div class="carousel-inner h-100">
+                                            <div class="carousel-item h-100 active" data-bs-interval="10000">
+                                                <img src="img/appli_interne/securite/connexion_ip/1.jpg"
+                                                        class="d-block w-100" alt="Image slide 1">
+                                            </div>
+                                            <div class="carousel-item h-100" data-bs-interval="10000">
+                                                <img src="img/appli_interne/securite/connexion_ip/3 (2).jpg"
+                                                        class="d-block w-100" alt="Image slide 2">
+                                            </div>
+                                            <div class="carousel-item h-100" data-bs-interval="10000">
+                                                <img src="img/appli_interne/securite/connexion_ip/9.jpg"
+                                                        class="d-block w-100" alt="Image slide 2">
+                                            </div>
+                                            <div class="carousel-item h-100" data-bs-interval="10000">
+                                                <img src="img/appli_interne/securite/connexion_ip/10.jpg"
+                                                        class="d-block w-100" alt="Image slide 3">
+                                            </div>
+                                            <div class="carousel-item h-100" data-bs-interval="10000">
+                                                <img src="img/appli_interne/securite/connexion_ip/12.jpg"
+                                                        class="d-block w-100" alt="Image slide 4">
+                                            </div>
+                                            <div class="carousel-item h-100" data-bs-interval="10000">
+                                                <img src="img/appli_interne/securite/connexion_ip/13.jpg"
+                                                        class="d-block w-100" alt="Image slide 5">
+                                            </div>
+                                            <div class="carousel-item h-100" data-bs-interval="10000">
+                                                <img src="img/appli_interne/securite/connexion_ip/6.PNG"
+                                                        class="d-block w-100" alt="Image slide 6">
+                                            </div>
+                                            <div class="carousel-item h-100" data-bs-interval="10000">
+                                                <img src="img/appli_interne/securite/connexion_ip/5.PNG"
+                                                        class="d-block w-100" alt="Image slide 7">
+                                            </div>
+                                            <div class="carousel-item h-100" data-bs-interval="10000">
+                                                <img src="img/appli_interne/securite/connexion_ip/11.PNG"
+                                                        class="d-block w-100" alt="Image slide 8">
+                                            </div>
+                                            <div class="carousel-item h-100" data-bs-interval="10000">
+                                                <img src="img/appli_interne/securite/connexion_ip/4.PNG"
+                                                        class="d-block w-100" alt="Image slide 9">
+                                            </div>
+                                            <div class="carousel-item h-100" data-bs-interval="10000">
+                                                <img src="img/appli_interne/securite/connexion_ip/8.jpg"
+                                                        class="d-block w-100" alt="Image slide 10">
+                                            </div>
+                                            <div class="carousel-item h-100" data-bs-interval="10000">
+                                                <img src="img/appli_interne/securite/connexion_ip/2.PNG"
+                                                        class="d-block w-100" alt="Image slide 11">
+                                            </div>
+                                            <div class="carousel-item h-100" id="card" data-bs-interval="10000">
+                                                <img src="img/appli_interne/securite/connexion_ip/7.PNG"
+                                                        id="p" alt="Image slide 12">
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev btn btn-dark" type="button"
+                                                data-bs-target="#carouselProject55" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next btn btn-dark" type="button"
+                                                data-bs-target="#carouselProject55" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><br><br>
+
+                    <h5><li class="fs-5">Crypter le mot de passe en base de données</li></h5><br>
+
+                    <div>
+                        <div class="card">
+                            <img src="img/appli_interne/securite/crypter_mdp_bdd/1.jpg" class="card-img-top" alt="Stage2">
+                            <div class="card-body">
+                                <h5 class="card-title">Mot de passe crypté</h5>
+                                <a class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#infoProjet56"
+                                    aria-controls="infoProjet56">Aperçu</a>
+                            </div>
+                            <div class="offcanvas offcanvas-bottom h-100" tabindex="-1" id="infoProjet56"
+                                    aria-labelledby="titelProjet56">
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title" id="titelProjet56">Mot de passe crypté</h5>
+                                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                            aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body w-100">
+                                    <!-- Carousel -->
+                                    <div id="carouselProject56" class="carousel slide shadow h-100"
+                                            data-bs-ride="carousel" data-bs-touch="true">
+                                        <div class="carousel-inner h-100">
+                                            <div class="carousel-item h-100 active" data-bs-interval="10000">
+                                                <img src="img/appli_interne/securite/crypter_mdp_bdd/1.jpg"
+                                                        class="d-block w-100" alt="Image slide 1">
+                                            </div>
+                                            <div class="carousel-item h-100" data-bs-interval="10000">
+                                                <img src="img/appli_interne/securite/crypter_mdp_bdd/2.PNG"
+                                                        class="d-block w-100" alt="Image slide 2">
+                                            </div>
+                                            <div class="carousel-item h-100" data-bs-interval="10000">
+                                                <img src="img/appli_interne/securite/crypter_mdp_bdd/3.PNG"
+                                                        class="d-block w-100" alt="Image slide 3">
+                                            </div>
+                                            <div class="carousel-item h-100" data-bs-interval="10000">
+                                                <img src="img/appli_interne/securite/crypter_mdp_bdd/4.jpg"
+                                                        class="d-block w-100" alt="Image slide 4">
+                                            </div>
+                                            <div class="carousel-item h-100" data-bs-interval="10000">
+                                                <img src="img/appli_interne/securite/crypter_mdp_bdd/5.jpg"
+                                                        class="d-block w-100" alt="Image slide 5">
+                                            </div>
+                                            <div class="carousel-item h-100" data-bs-interval="10000">
+                                                <img src="img/appli_interne/securite/crypter_mdp_bdd/9.PNG"
+                                                        id="card" alt="Image slide 6">
+                                            </div>
+                                            <div class="carousel-item h-100" data-bs-interval="10000">
+                                                <img src="img/appli_interne/securite/crypter_mdp_bdd/7.jpg"
+                                                        class="d-block w-100" alt="Image slide 7">
+                                            </div>
+                                            <div class="carousel-item h-100" data-bs-interval="10000">
+                                                <img src="img/appli_interne/securite/crypter_mdp_bdd/6.PNG"
+                                                        class="d-block w-100" alt="Image slide 8">
+                                            </div>
+                                            <div class="carousel-item h-100" data-bs-interval="10000">
+                                                <img src="img/appli_interne/securite/crypter_mdp_bdd/8.jpg"
+                                                        class="d-block w-100" alt="Image slide 9">
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev btn btn-dark" type="button"
+                                                data-bs-target="#carouselProject56" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next btn btn-dark" type="button"
+                                                data-bs-target="#carouselProject56" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><br><br>
+
+                    <h5><li class="fs-5">Création d'une formation sur la double authentification à l'aide d'une vidéo youtube : </li></h5><br>
+
+                    <div>
+                        <div class="card">
+                            <img src="img/appli_interne/securite/double_auth/2.jpg" class="card-img-top" alt="Stage2">
+                            <div class="card-body">
+                                <h5 class="card-title">Double authentification</h5>
+                                <a class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#infoProjet57"
+                                    aria-controls="infoProjet57">Aperçu</a>
+                            </div>
+                            <div class="offcanvas offcanvas-bottom h-100" tabindex="-1" id="infoProjet57"
+                                    aria-labelledby="titelProjet57">
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title" id="titelProjet57">Double authentification</h5>
+                                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                            aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body w-100">
+                                                <embed src="img/appli_interne/securite/double_auth/formation_double_authentification.pdf" type="application/pdf" width="100%" height="100%">
+                                </div>
+                            </div>
+                        </div>
+                    </div><br><br>
+
+
+                    <h5><li class="fs-5">Création d'une formation sur la connexion à l'aide de l'OpenId grâce à une vidéo youtube : </li></h5><br>
+
+                    <div>
+                        <div class="card">
+                            <img src="img/appli_interne/securite/openid/1.jpg" class="card-img-top" alt="Stage2">
+                            <div class="card-body">
+                                <h5 class="card-title">OpenID</h5>
+                                <a class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#infoProjet58"
+                                    aria-controls="infoProjet58">Aperçu</a>
+                            </div>
+                            <div class="offcanvas offcanvas-bottom h-100" tabindex="-1" id="infoProjet58"
+                                    aria-labelledby="titelProjet58">
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title" id="titelProjet58">OpenID</h5>
+                                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                            aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body w-100">
+                                    <embed src="img/appli_interne/securite/openid/formation_authentification_via_google.pdf" type="application/pdf" width="100%" height="100%">
+                                </div>
+                            </div>
+                        </div>
+                    </div><br><br>
+
+                    <p class="fs-5">A la différence de la double authentification, j'ai également implémenté cette méthode dans l'application : </p><br>
+
+
+
+                    <img src="img/appli_interne/securite/openid/auth_google1.jpg"
+                                                         alt="Image slide 1"><br>
+
+                    <img src="img/appli_interne/securite/openid/auth_google2.jpg"
+                                                         alt="Image slide 2">
+                    
+
+                </ul>
+
+
+
+            </div>
+        </section>
+
+        _______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+              
+        <section id="android" class="py-5">
+            <div class="container">
+                <h1>Application Android Akei</h1>
+                <br><br>
+                <h5 style="text-decoration: underline;">Explication du projet</h5><br>
+                <p class="fs-3">J'ai réalisé cette application Android en équipe. Le but de cette application était de rendre l'information disponible à des clients à propos d'une chaine de magasins.</p><br><br>
+
+                <p class="fs-5">Comme pour mes autres projets, j'ai utilisé Trello afin d'organiser mon code : </p><br>
+                
+                <img src="img/andro/trello.PNG" alt="trello de l'application Android"><br><br>
+
+                <p class="fs-5">Lors de la conception et du développement de cette application, nous avons commencé par établir le schéma UML en équipe : </p><br>
+
+                <img src="img/andro/uml.PNG" alt="schéma UML"><br><br><br>
+
+                <p class="fs-5">Depuis ce schéma UML, nous avons établit les requêtes de création des tables de la base de données : </p><br>
+
+
+
+                <img src="img/andro/req1.PNG" alt="requêtes"><br><br>
+                
+                <img src="img/andro/req2.PNG" alt="requêtes"><br><br>
+                
+                
+
+                <p class="fs-5">Par la suite, nous nous sommes naturellement occupés de coder les classes métier ensemble. Voici la classe Rayon :</p><br>
+
+                <div>
+                    <div class="card">
+                        <img src="img/andro/classe1.PNG" class="card-img-top" alt="Application Android">
+                        <div class="card-body">
+                            <h5 class="card-title">Classes métiers</h5>
+                            <a class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#infoProjet61"
+                                aria-controls="infoProjet61">Aperçu</a>
+                        </div>
+                        <div class="offcanvas offcanvas-bottom h-100" tabindex="-1" id="infoProjet61"
+                                aria-labelledby="titelProjet61">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="titelProjet61">Classes métiers</h5>
+                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                        aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body w-100">
+                                <!-- Carousel -->
+                                <div id="carouselProject61" class="carousel slide shadow h-100"
+                                        data-bs-ride="carousel" data-bs-touch="true">
+                                    <div class="carousel-inner h-100">
+                                        <div class="carousel-item h-100 active" data-bs-interval="10000">
+                                            <img src="img/classe1.PNG"
+                                                    class="d-block w-100" alt="Image slide 1">
+                                        </div>
+                                        <div class="carousel-item h-100" data-bs-interval="10000">
+                                            <img src="img/classe2.PNG"
+                                                    class="d-block w-100" alt="Image slide 2">
+                                        </div>
+                                        <div class="carousel-item h-100" data-bs-interval="10000">
+                                            <img src="img/andro/classe2.PNG"
+                                                    class="d-block w-100" alt="Image slide 3">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev btn btn-dark" type="button"
+                                            data-bs-target="#carouselProject61" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next btn btn-dark" type="button"
+                                            data-bs-target="#carouselProject61" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><br><br>
+
+                <p class="fs-5">Puis pour pouvoir gérer les données, nous avons codé les classes DAO de chaques classes métiers. Voici la classe DAO VehiculeDAO :</p><br>
+
+                <div>
+                    <div class="card">
+                        <img src="img/andro/dao1.PNG" class="card-img-top" alt="Application Android">
+                        <div class="card-body">
+                            <h5 class="card-title">Classes DAO</h5>
+                            <a class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#infoProjet62"
+                                aria-controls="infoProjet62">Aperçu</a>
+                        </div>
+                        <div class="offcanvas offcanvas-bottom h-100" tabindex="-1" id="infoProjet62"
+                                aria-labelledby="titelProjet62">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="titelProjet62">Classes DAO</h5>
+                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                        aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body w-100">
+                                <!-- Carousel -->
+                                <div id="carouselProject62" class="carousel slide shadow h-100"
+                                        data-bs-ride="carousel" data-bs-touch="true">
+                                    <div class="carousel-inner h-100">
+                                        <div class="carousel-item h-100 active" data-bs-interval="10000">
+                                            <img src="img/andro/dao1.PNG"
+                                                    class="d-block w-100" alt="Image slide 1">
+                                        </div>
+                                        <div class="carousel-item h-100" data-bs-interval="10000">
+                                            <img src="img/dao2.PNG"
+                                                    class="d-block w-100" alt="Image slide 2">
+                                        </div>
+                                        <div class="carousel-item h-100" data-bs-interval="10000">
+                                            <img src="img/andro/dao3.PNG"
+                                                    class="d-block w-100" alt="Image slide 3">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev btn btn-dark" type="button"
+                                            data-bs-target="#carouselProject62" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next btn btn-dark" type="button"
+                                            data-bs-target="#carouselProject62" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><br><br>
+
+                <p class="fs-5">Après nous être occupés des données, nous nous sommes occupés de créer les maquettes de l'application :</p><br>
+
+                <div>
+                    <div class="card">
+                        <img src="img/andro/maquette1.PNG" class="card-img-top" alt="Application Android">
+                        <div class="card-body">
+                            <h5 class="card-title">Maquettes</h5>
+                            <a class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#infoProjet63"
+                                aria-controls="infoProjet63">Aperçu</a>
+                        </div>
+                        <div class="offcanvas offcanvas-bottom h-100" tabindex="-1" id="infoProjet63"
+                                aria-labelledby="titelProjet63">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="titelProjet63">Maquettes</h5>
+                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                        aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body w-100">
+                                <!-- Carousel -->
+                                <div id="carouselProject63" class="carousel slide shadow h-100"
+                                        data-bs-ride="carousel" data-bs-touch="true">
+                                    <div class="carousel-inner h-100">
+                                        <div class="carousel-item h-100 active" data-bs-interval="10000">
+                                            <img src="img/maquette1.PNG"
+                                                    class="d-block w-100" alt="Image slide 1">
+                                        </div>
+                                        <div class="carousel-item h-100" data-bs-interval="10000">
+                                            <img src="img/andro/maquette2.PNG"
+                                                    class="d-block w-100" alt="Image slide 3">
+                                        </div>
+                                        <div class="carousel-item h-100" data-bs-interval="10000">
+                                            <img src="img/andro/maquette3.PNG"
+                                                    class="d-block w-100" alt="Image slide 4">
+                                        </div>
+                                        <div class="carousel-item h-100" data-bs-interval="10000">
+                                            <img src="img/andro/maquette4.PNG"
+                                                    class="d-block w-100" alt="Image slide 5">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev btn btn-dark" type="button"
+                                            data-bs-target="#carouselProject63" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next btn btn-dark" type="button"
+                                            data-bs-target="#carouselProject63" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><br><br>
+
+                <p class="fs-5">Par la suite nous avons codé ensemble la liste qui présente les choix possibles dans les recherches : </p><br>
+
+                
+                <div>
+                    <div class="card">
+                        <img src="img/andro/lm1.PNG" class="card-img-top" alt="Application Android">
+                        <div class="card-body">
+                            <h5 class="card-title">Liste des choix</h5>
+                            <a class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#infoProjet64"
+                                aria-controls="infoProjet64">Aperçu</a>
+                        </div>
+                        <div class="offcanvas offcanvas-bottom h-100" tabindex="-1" id="infoProjet64"
+                                aria-labelledby="titelProjet64">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="titelProjet64">Liste des choix</h5>
+                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                        aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body w-100">
+                                <!-- Carousel -->
+                                <div id="carouselProject64" class="carousel slide shadow h-100"
+                                        data-bs-ride="carousel" data-bs-touch="true">
+                                    <div class="carousel-inner h-100">
+                                        <div class="carousel-item h-100 active" data-bs-interval="10000">
+                                            <img src="img/choixActivity1.PNG"
+                                                    class="d-block w-100" alt="Image slide 1">
+                                        </div>
+                                        <div class="carousel-item h-100" data-bs-interval="10000">
+                                            <img src="img/choixActivity2.PNG"
+                                                    class="d-block w-100" alt="Image slide 2">
+                                        </div>
+                                        <div class="carousel-item h-100" data-bs-interval="10000">
+                                            <img src="img/choixActivity3.PNG"
+                                                    class="d-block w-100" alt="Image slide 2">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev btn btn-dark" type="button"
+                                            data-bs-target="#carouselProject64" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next btn btn-dark" type="button"
+                                            data-bs-target="#carouselProject64" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><br><br>
+
+                <p class="fs-5">Pour finir, nous nous sommes occupés séparément de nos tâches spécifiques. Pour ma part, je me devais de coder la liste des véhicules
+                    présentées par les magasins Akei, ainsi que, les caractéristiques de ces véhicules.
+                </p><br>
+
+                <div>
+                    <div class="card">
+                        <img src="img/andro/lv1.PNG" class="card-img-top" alt="Application Android">
+                        <div class="card-body">
+                            <h5 class="card-title">Véhicules</h5>
+                            <a class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#infoProjet65"
+                                aria-controls="infoProjet65">Aperçu</a>
+                        </div>
+                        <div class="offcanvas offcanvas-bottom h-100" tabindex="-1" id="infoProjet65"
+                                aria-labelledby="titelProjet65">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="titelProjet65">Véhicules</h5>
+                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                        aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body w-100">
+                                <!-- Carousel -->
+                                <div id="carouselProject65" class="carousel slide shadow h-100"
+                                        data-bs-ride="carousel" data-bs-touch="true">
+                                    <div class="carousel-inner h-100">
+                                        <div class="carousel-item h-100 active" data-bs-interval="10000">
+                                            <img src="img/andro/lv1.PNG"
+                                                    class="d-block w-100" alt="Image slide 1">
+                                        </div>
+                                        <div class="carousel-item h-100" data-bs-interval="10000">
+                                            <img src="img/andro/lv2.PNG"
+                                                    class="d-block w-100" alt="Image slide 2">
+                                        </div>
+                                        <div class="carousel-item h-100" data-bs-interval="10000">
+                                            <img src="img/andro/lv3.PNG"
+                                                    class="d-block w-100" alt="Image slide 3">
+                                        </div>
+                                        <div class="carousel-item h-100" data-bs-interval="10000">
+                                            <img src="img/andro/lv4.PNG"
+                                                    class="d-block w-100" alt="Image slide 4">
+                                        </div>
+                                        <div class="carousel-item h-100" data-bs-interval="10000">
+                                            <img src="img/andro/lv5.PNG"
+                                                    class="d-block w-100" alt="Image slide 5">
+                                        </div>
+                                        <div class="carousel-item h-100" data-bs-interval="10000">
+                                            <img src="img/andro/ad1.PNG"
+                                                    class="d-block w-100" alt="Image slide 6">
+                                        </div>
+                                        <div class="carousel-item h-100" data-bs-interval="10000">
+                                            <img src="img/andro/ad2.PNG"
+                                                    class="d-block w-100" alt="Image slide 7">
+                                        </div>
+                                        <div class="carousel-item h-100" data-bs-interval="10000">
+                                            <img src="img/andro/ad3.PNG"
+                                                    class="d-block w-100" alt="Image slide 8">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev btn btn-dark" type="button"
+                                            data-bs-target="#carouselProject65" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next btn btn-dark" type="button"
+                                            data-bs-target="#carouselProject65" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                
+
+
+            </div>
+        </section>
+
+        _______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+              
+        <section id="glpi" class="py-5">
+            <div class="container">
+                <h1>GLPI</h1>
+                <br><br>
+                <h2 style="text-decoration: underline;">Explication du projet</h2><br>
+                <p class="fs-3">J'ai appris à me servir de FusionInventory, car il permet d'assurer un inventaire automatisé grâce à GLPI, et cela peut-être très utile en entreprise.</p><br><br><br><br><br><br><br><br><br>
+
+                <h5>Après avoir été installé sur GLPI :</h5><br>
+
+                <img src="img/glpi_inventaire/1.png" alt="plugin"><br><br><br>
+
+                <h5 class="fs-5">Celui-ci a réalisé automatiquement un inventaire de mon ordinateur :</h5><br>
+
+                <div>
+                    <div class="card">
+                        <img src="img/glpi_inventaire/2.png" class="card-img-top" alt="FusionInventory">
+                        <div class="card-body">
+                            <h5 class="card-title">Inventaire automatisé</h5>
+                            <a class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#infoProjet70"
+                                aria-controls="infoProjet70">Aperçu</a>
+                        </div>
+                        <div class="offcanvas offcanvas-bottom h-100" tabindex="-1" id="infoProjet70"
+                                aria-labelledby="titelProjet70">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="titelProjet70">Inventaire automatisé</h5>
+                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                        aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body w-100">
+                                <!-- Carousel -->
+                                <div id="carouselProject70" class="carousel slide shadow h-100"
+                                        data-bs-ride="carousel" data-bs-touch="true">
+                                    <div class="carousel-inner h-100">
+                                        <div class="carousel-item h-100 active" data-bs-interval="10000">
+                                            <img src="img/glpi_inventaire/2.png"
+                                                    class="d-block w-100" alt="Image slide 1">
+                                        </div>
+                                        <div class="carousel-item h-100" data-bs-interval="10000">
+                                            <img src="img/glpi_inventaire/3.png"
+                                                    class="d-block w-100" alt="Image slide 2">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev btn btn-dark" type="button"
+                                            data-bs-target="#carouselProject70" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next btn btn-dark" type="button"
+                                            data-bs-target="#carouselProject70" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><br><br>
+
+                <p class="fs-5">On peut également remarqué que le plugin va réaliser un inventaire automatique selon une certaine fréquence :</p><br>
+
+                <img src="img/glpi_inventaire/3.png" class="card" alt="inventaire automatisé">
+
+
+            </div>
+        </section>
+                
+                _______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+              
+        <section id="Ecommerce" class="py-5">
+            <div class="container">
+                <h1>Site E-commerce</h1>
+                <br><br>
+                <h2 style="text-decoration: underline;">Explication du projet</h2><br>
+                <p class="fs-3">J'ai créé un site e-commerce de démonstration de vente de padels à l'aide de Wordpress; car quelqu'un souhaite lancer une entreprise dans ce domaine et je lui ai proposé de lui créer un site, afin de vendre ses produits en ligne. J'ai réalisé ce site principalement grâce à l'extension woocommerce.</p><br><br><br><br><br><br><br><br><br>
+
+                <h3 class="fs-5">Voici l'accueil du site</h3><br>
+
+                <embed src="img/e-commerce/localhost_wordpress.pdf" type="application/pdf" width="100%" height="400px"><br><br><br><br><br>
+                
+                <h3 class="fs-5">Création de catégories de produits</h3><br>
+                
+                <embed src="img/e-commerce/amateur.pdf" type="application/pdf" width="100%" height="400px"><br><br><br><br><br>
+                
+                <h3 class="fs-5">Création d'une page affichant les nouveautés</h3><br>
+                
+                <embed src="img/e-commerce/nouveautes.pdf" type="application/pdf" width="100%" height="400px"><br><br><br><br><br>
+                
+                <h3 class="fs-5">Création d'une page affichant les promotions</h3><br>
+                
+                <embed src="img/e-commerce/promotions.pdf" type="application/pdf" width="100%" height="400px"><br><br><br><br><br>
+                
+                <h3 class="fs-5">Sélection du produit</h3><br>
+                
+                <embed src="img/e-commerce/selection.pdf" type="application/pdf" width="100%" height="400px"><br><br><br><br><br>
+                
+                <h3 class="fs-5">Panier de commande</h3><br>
+                
+                <embed src="img/e-commerce/panier.pdf" type="application/pdf" width="100%" height="400px"><br><br><br><br><br>
+                
+                <h3 class="fs-5">Validation de la commande</h3><br>
+                
+                <embed src="img/e-commerce/commande.pdf" type="application/pdf" width="100%" height="400px"><br><br>
+                
+        
+                
+                
+            </div>
+        </section>
+        
+
+
+
+    </main>
+<footer class="border-top">
+    <div class="container py-5">
+        <div class="row gy-4 align-items-center">
+            <div class="col-12 col-md-4">
+                <a class="navbar-brand text-dark text-uppercase fw-bold" href="#">
+                    <span class="bg-primary bg-gradient p-1 rounded-3 text-light">Enzo</span> Fantapie Hamang
+                </a>
+            </div>
+            <div class="col-12 col-md-4 text-md-center">
+                <ul class="list-unstyled mb-0">
+                    <li>
+                        <a href="#" class="text-decoration-none text-dark" data-bs-toggle="modal"
+                            data-bs-target="#mentionsLegales">Mentions légales</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-4 text-md-end">
+                <ul class="list-inline mb-0">
+                    <li class="list-inline-item">
+                        <a href="https://www.linkedin.com/in/enzo-fantapie-hamang-0988b5297" class="text-decoration-none text-dark" data-bs-toggle="tooltip"
+                            title="LinkedIn">
+                            <i class="fab fa-linkedin fa-2x"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="mentionsLegales" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Mentions Légales</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h2>Identité :</h2>
+                    <p>Enzo Fantapie Hamang</p>
+
+                    <h2>Coordonnées :</h2>
+                    <p>Domicile : Marseillan, 65350, 7 chemin du Turon<br>
+                        E-mail : enzofantapiehamang@gmail.com<br>
+                        Téléphone : +33 6 75 52 28 64</p>
+
+                    <h2>Informations complémentaires :</h2>
+                    <p>Directeur de la publication et de la rédaction: Enzo Fantapie Hamang<br><br>
+                        Hébergeur : <br>
+                        Site internet : <br>
+                        Adresse : </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous">
+            </script>
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
+</footer>
+</body>
+
+</html>

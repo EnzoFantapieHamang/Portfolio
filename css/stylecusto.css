@@ -1,0 +1,59 @@
+
+.card{
+    width: 700px;
+    height: auto;
+}
+
+.offcanvas-body{
+    width: 1000px;
+    height: auto;
+}
+
+#petit{
+    width: 300px;
+    height: auto;
+}
+
+#up{
+    width: 150px;
+    height: auto;
+}
+
+#uup{
+    width: 50px;
+    height: auto;
+}
+
+
+
+#mp{
+    width: 500px;
+    height: auto;
+}
+
+#m{
+    width: 900px;
+    height: auto;
+}
+
+#mg{
+    width: 1300px;
+    height: auto;
+}
+
+
+#g{
+    width: 1800px;
+    height: auto;
+}
+
+#card{
+    width: 700px;
+    height: auto;
+}
+
+.img-70{
+    @media all and(0px <= width <= 500px){
+        width: 50%;
+    }
+}
